@@ -1,0 +1,4 @@
+.DS_Store
+account.json
+.terraform
+*.tfstate.backup
