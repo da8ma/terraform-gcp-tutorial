@@ -53,6 +53,8 @@ $ gcloud projects create terraform-test-lab
 
 * Instanceの詳細設定やその他GCPサービスの設定もTerraform経由で設定できるようにする。
 
+* 設定ファイルの分割を試す。
+
 * サービスアカウントの適切な権限についてちゃんと調べる。
 
 ## 参考Document
