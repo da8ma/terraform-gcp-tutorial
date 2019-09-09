@@ -1,10 +1,10 @@
 # terraform-gcp-tutorial
 
-### はじめに
+## はじめに
 
-GCPの個人無料枠がまだ残っているので、インフラ会議で挙がっていた[Terraform](https://www.terraform.io) を触ってみました。まずはGCEインスタンスを作成することを目標に手を動かしてみます。
+GCPの[無料利用枠](https://cloud.google.com/free/?hl=ja)がまだ残っているので、インフラ会議で挙がっていた[Terraform](https://www.terraform.io) を触ってみました。<br> まずはGCEインスタンスを作成することを目標に手を動かしてみます。
 
-### 実行環境
+## 実行環境
 
 PC
 ```
@@ -19,24 +19,34 @@ $ terraform -v
 Terraform v0.12.8
 ```
 
-### Install
+## Install
 
-[Homebrew](https://brew.sh/index_ja) でインストールしました。
+#### macOS 
+[brew](https://brew.sh/index_ja) でインストールしました。<br> 個人的にはこれが一番てっとり早く導入できると考えています。
 
 ```
 $ brew install terraform
 ```
 
-### 内容
+---
 
-①プロジェクトを作成 (cloud shellを使用しました。)
+#### Windows
+
+- 公式サイトからファイルをダウンロードし、インストール<br> [Terraformダウンロードサイト](https://www.terraform.io/downloads.html)
+
+* [Chocolatey](https://chocolatey.org)を使用してインストール
+
+
+## 内容
+
+1. プロジェクトを作成 (cloud shellを使用しました。)
 ```
 $ gcloud projects create terraform-test-lab
 ```
 
-②
 
-### 今後のタスク
+
+## 今後のタスク
 
 * 誤って認証情報をpushしないように何らかの対策は必要そう....<br>
 (git-secretを使うとか)
@@ -45,7 +55,7 @@ $ gcloud projects create terraform-test-lab
 
 * サービスアカウントの適切な権限についてちゃんと調べる。
 
-### 参考Document
+## 参考Document
 https://www.terraform.io/docs/providers/google/index.html
 
 [Getting Started with the Google Provider](https://www.terraform.io/docs/providers/google/getting_started.html)
