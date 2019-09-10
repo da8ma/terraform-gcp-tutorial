@@ -39,12 +39,25 @@ $ brew install terraform
 
 ## 内容
 
-1. プロジェクトを作成 (cloud shellを使用しました。)
+1. GCP上でtest用のプロジェクトを作成 (cloud shellを使用しました。)
 ```
 $ gcloud projects create terraform-test-lab
 ```
 
+ディレクトリ構成を初期化
+```
+$ terraform init
+```
 
+動作確認
+```
+$ terraform plan
+```
+
+変更の適用
+```
+$ terraform apply
+```
 
 ## 今後のタスク
 
@@ -59,5 +72,7 @@ $ gcloud projects create terraform-test-lab
 
 ## 参考Document
 https://www.terraform.io/docs/providers/google/index.html
+
+[Terraform CLI](https://www.terraform.io/docs/commands/init.html)
 
 [Getting Started with the Google Provider](https://www.terraform.io/docs/providers/google/getting_started.html)
